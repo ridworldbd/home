@@ -46,3 +46,61 @@
     </footer>
 </body>
 </html>
+export default function HomePage() {
+  return (
+    <div className="min-h-screen bg-white text-gray-800 font-sans">
+      {/* Header */}
+      <header className="bg-teal-700 text-white py-10 shadow-md text-center">
+        <h1 className="text-4xl md:text-5xl font-bold mb-2">রিদওয়ার্ল্ডে স্বাগতম</h1>
+        <p className="text-lg md:text-xl">
+          পর্দাসম্মত ফ্যাশন, কাস্টম গ্রাফিক ডিজাইন এবং সৃজনশীল আর্ট প্রশিক্ষণের নির্ভরযোগ্য গন্তব্য।
+        </p>
+      </header>
+
+      {/* About Sections */}
+      <main className="py-12 px-4 md:px-16 space-y-16">
+        {/* Our Services */}
+        <section>
+          <h2 className="text-3xl font-semibold mb-4 text-teal-700">আমাদের সেবাসমূহ</h2>
+          <ul className="list-disc list-inside space-y-2 text-lg">
+            <li>ইলিগেন্ট ও পর্দাসম্মত পোশাক ডিজাইন</li>
+            <li>বেসপোক গ্রাফিক ডিজাইন সার্ভিস</li>
+            <li>সৃজনশীল আর্ট ও ডিজাইন প্রশিক্ষণ</li>
+          </ul>
+        </section>
+
+        {/* Our Vision */}
+        <section>
+          <h2 className="text-3xl font-semibold mb-4 text-teal-700">আমাদের লক্ষ্য</h2>
+          <p className="text-lg leading-relaxed">
+            আমরা নারীদের জন্য এমন একটি প্ল্যাটফর্ম তৈরি করতে চাই যেখানে তারা তাদের স্বকীয়তা, নান্দনিকতা ও
+            সৃজনশীলতা বিকাশ ঘটাতে পারেন একটি পরিশীলিত পরিবেশে।
+          </p>
+        </section>
+  {/* Contact Section */}
+        <section>
+          <h2 className="text-3xl font-semibold mb-4 text-teal-700">যোগাযোগ করুন</h2>
+          <p className="text-lg mb-4">
+            আমাদের সাথে যুক্ত হতে পারেন Facebook বা YouTube-এর মাধ্যমে অথবা ইমেইল:
+            <span className="font-medium text-teal-700"> ridworld.bd@gmail.com</span>
+          </p>
+          <div className="flex items-center space-x-4">
+            <Button variant="default" className="flex items-center space-x-2">
+              <Facebook className="h-5 w-5" />
+              <span>Facebook</span>
+            </Button>
+            <Button variant="outline" className="flex items-center space-x-2">
+              <Youtube className="h-5 w-5 text-red-600" />
+              <span>YouTube</span>
+            </Button>
+          </div>
+        </section>
+      </main>
+
+      {/* Footer */}
+      <footer className="bg-gray-100 border-t py-4 text-center text-sm text-gray-500">
+        © {new Date().getFullYear()} Ridworld by Mohammad Ridwanul Islam
+      </footer>
+    </div>
+  );
+}
